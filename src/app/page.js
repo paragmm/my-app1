@@ -9,7 +9,7 @@ export default function Home() {
   }
 
   const GotoReplace =()=>{
-    router.push('/about');
+    router.replace('/about');
   }
 
   return (
