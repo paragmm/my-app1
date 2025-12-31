@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Menu from "../components/Menu"
 // import pic from ''
-export default function page() {
+export default async function page({ searchParams }) {
+    const params = await searchParams;
     return (
         <>
             <Menu />
@@ -15,6 +16,9 @@ export default function page() {
                 height={20}
                 priority
             />
+
+            <p>Profile ID:{params.profile_id}</p>
+            <p>Profile Name:{params.name}</p>
         </>
         
     )
