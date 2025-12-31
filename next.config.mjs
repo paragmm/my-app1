@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   turbopack: {
-    root: "C:/Users/PARAG-DHALI/Desktop/TMP/nextproject/my-app1"
+    root: "D:/NextJSApps/my-app1"
   }
 
 };
