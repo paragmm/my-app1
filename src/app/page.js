@@ -5,11 +5,11 @@ import {useRouter} from 'next/navigation';
 export default function Home() {
   const router=useRouter();
   const Goto =()=>{
-    router.push('/about');
+    router.push('/about'); // add new entry in history stack
   }
 
   const GotoReplace =()=>{
-    router.replace('/about');
+    router.replace('/about'); // replace current entry in history stack
   }
 
   return (
