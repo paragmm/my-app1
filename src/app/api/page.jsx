@@ -6,7 +6,7 @@ const Page = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            const rsp = await fetch(process.env.API_BASE_URL);
+            const rsp = await fetch('https://dummyjson.com/products');
             const json = await rsp.json();
             setData(json.products);
         };
