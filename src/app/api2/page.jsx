@@ -1,7 +1,7 @@
 import Menu from "../components/Menu";
 
 async function getData() {
-    const rsp = await fetch('https://dummyjson.com/products', {
+    const rsp = await fetch(process.env.API_BASE_URL, {
         cache: 'no-store',
     });
     const json = await rsp.json();
